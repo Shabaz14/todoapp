@@ -22,7 +22,7 @@ await todo.create({
     description : createpayload.description,
 })
 
-res.status(411).json({
+res.json({
     msg : 'Your todo has been created'
   })
 
@@ -61,3 +61,5 @@ if(!parsedpayload.success){
   })
 
 })
+
+app.listen(3000);
